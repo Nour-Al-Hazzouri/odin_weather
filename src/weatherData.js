@@ -3,7 +3,7 @@ import { fetchWeatherData } from "./weatherQuery.js";
 
 async function getWeatherData(address) {
   const data = await fetchWeatherData(address);
-  const currentAddress = data.address;
+  const currentAddress = data.resolvedAddress;
   const currentCondition = data.currentConditions.conditions;
   const currentHumidity = data.currentConditions.humidity;
   const currentTemp = data.currentConditions.temp;
