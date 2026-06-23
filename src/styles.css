@@ -1,5 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
 html,
 body {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Rubik";
+  color: #fff;
+  background-color: #0a2540;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  min-width: fit-content;
+  border: 1px solid #000;
+  padding: 1rem;
+  border-radius: 0.35rem;
+}
+section > div {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+h2 {
+  margin: 1rem;
+}
+
+.sunny {
+  background: linear-gradient(135deg, #4a90e2, #50e3c2);
+  color: #0a2540;
+}
+.rainy {
+  background: linear-gradient(135deg, #4f5d75, #2d3142);
+  color: #ef8354;
+}
+.snowy {
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  color: #2b5876;
+}
+.cloudy {
+  background: linear-gradient(135deg, #757f9a, #d7dde8);
+  color: #1f2421;
+}
+.night,
+.clear-night {
+  background: linear-gradient(135deg, #0b132b, #1c2541);
+  color: #ffd166;
 }
